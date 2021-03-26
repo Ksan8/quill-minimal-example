@@ -13,12 +13,15 @@ import { AppComponent } from './app.component';
     BrowserModule,
     QuillModule.forRoot({
       modules: {
+        syntax: true,
         toolbar: [
-          ['bold', 'italic', 'underline', 'strike'],
-          [{ 'header': 1 }, { 'header': 2 }],
-          [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-          [{ 'indent': '-1'}, { 'indent': '+1' }],
-          [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+          [{ header: [3, 4, false] }],
+          ['bold', 'italic', 'underline'],
+          [{ color: [] }, { background: [] }],
+          [{ align: [] }],
+          [{ list: 'ordered' }, { list: 'bullet' }],
+          [{ indent: '-1' }, { indent: '+1' }],
+          ['blockquote', 'code-block', 'link'],
         ],
       },
     })
